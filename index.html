@@ -3,7 +3,13 @@
   <title>Bananas and lenses</title>
 </head>
 <body>
-  <div id="main"></div>
+  <div id="main">
+    <ul>
+      <li v-for="item in podcasts">
+        {{ item.title }}
+      </li>
+    </ul>
+  </div>
 
   <script type="text/javascript" src="./js/vue.js"></script>
   <script type="text/javascript" src="./js/yahooLib.js"></script>
