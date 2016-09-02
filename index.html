@@ -9,10 +9,14 @@
 <body>
   <div class="columns is-mobile" id="main">
     <div class="column box is-half is-offset-one-quarter app">
-      <div class="level" v-for="item in podcasts">
+      <div class="level is-mobile" v-for="item in podcasts">
         
         <div class="level-left">
           <a class="level-item" href="{{ item.link }}">{{ item.title }}</a>
+        </div>
+
+        <div class="level-item has-text-centered">
+          <audio src="{{ item.enclosure.url }}" controls preload="metadata"></audio>
         </div>
 
         <div class="level-right">
