@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	height: 500px;
+	margin-top: 2em;
+}
+
+.app {
+	overflow: auto;
+	border: 1px solid #aaf;
+}
+
+.level {
+	border-bottom: 1px solid #aae;
+	padding-bottom: .5em;
+}

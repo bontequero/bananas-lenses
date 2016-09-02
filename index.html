@@ -1,14 +1,30 @@
 <html>
 <head>
   <title>Bananas and lenses</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.2/css/bulma.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div id="main">
-    <ul>
-      <li v-for="item in podcasts">
-        {{ item.title }}
-      </li>
-    </ul>
+  <div class="columns is-mobile" id="main">
+    <div class="column box is-half is-offset-one-quarter app">
+      <div class="level" v-for="item in podcasts">
+        
+        <div class="level-left">
+          <a class="level-item" href="{{ item.link }}">{{ item.title }}</a>
+        </div>
+
+        <div class="level-right">
+          <a href="{{ item.enclosure.url }}" class="button level-item" download>
+            <i class="fa fa-download" aria-hidden="true"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <button class="button is-primary">Загрузить всё</button> -->
   </div>
 
   <script type="text/javascript" src="./js/vue.js"></script>
