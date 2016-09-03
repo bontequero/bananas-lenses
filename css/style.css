@@ -3,17 +3,27 @@
 	padding: 0;
 }
 
-#main {
-	height: 80vh;
-	margin-top: 2em;
+#list {
+	overflow: auto;
+	height: 70vh;
 }
 
-.app {
-	overflow: auto;
-	border: 1px solid #aaf;
+#list :last-child {
+	border-bottom: none;
+}
+
+.panel {
+	width: 50%;
+	margin: auto;
+	margin-left: 25%;
+	margin-top: 1em;
 }
 
 .level {
 	border-bottom: 1px solid #aae;
 	padding-bottom: .5em;
+}
+
+.panel-heading {
+	background-color: #fff;
 }
